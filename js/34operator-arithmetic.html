@@ -9,29 +9,32 @@
     </style>
 </head>
 <body>
-    <!-- h1#head$*5>lorem3 -->
-    <h1 id="head1">
-        Lorem, ipsum dolor.
-    </h1>
-    <h1 id="head2">
-        Sunt, nemo distinctio.
-    </h1>
-    <h1 id="head3">
-        Modi, obcaecati iste?
-    </h1>
-    <h1 id="head4">
-        Consequatur, incidunt temporibus?
-    </h1>
-    <h1 id="head5">
-        Esse, quisquam saepe?
-    </h1>
 
     <script>
-        document.getElementById("head1").style.color = "blue";
-        document.querySelector("#head2").style.color = "red";
-        document.querySelector("#head3").style.backgroundColor = "yellow";
-        document.querySelector("#head4").style.border = "5px solid green";
-        document.querySelector("#head5").style.fontSize = "3em";
+        // 연산의 결과는 사용하는 연산자의 피연산자의 타입에 따라 달라짐
+        //두항의 타입 : number
+        console.log(3 - 4);
+        console.log(3 * 4);
+        console.log(3 / 4);
+        console.log(3 + 4);
+
+        //두항의 타입 : string
+        //number 로 자동 변환
+        console.log("3" - "4");
+        console.log("3" * "4");
+        console.log("3" / "4");
+
+        //number로 변환 안됨
+        console.log("3" + "4");
+        console.log("three" - "four");
+        console.log("3" - "four");
+
+        // + : 피연산자의 타입에 따라 결과 달라집
+        // 피연산자가 모두 number면 결과는 number
+        console.log(3+4);
+        // 피연산자중 하나라도 string이면 결과는 string; (연결연산자 concatenate)
+        console.log("3" + 4);
+        console.log("three" + 4);
         
     </script>
 
